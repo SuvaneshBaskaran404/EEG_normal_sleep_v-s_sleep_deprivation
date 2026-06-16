@@ -3,7 +3,7 @@
 
 This repository contains the code and analytical pipeline for classifying acute sleep deprivation versus normal sleep states using high-density, resting-state Electroencephalography (EEG) data. The project utilizes a combination of advanced signal processing, manual feature extraction, and machine learning/deep learning architectures (including EEGNet, CNNs, and Random Forests) to identify neurological biomarkers of fatigue.
 
-## 📊 Dataset Information
+## Dataset Information
 
 This project is built upon the open-access dataset published by Xiang et al. (2024). The dataset consists of eyes-open resting-state EEG recordings from 71 healthy participants, recorded across two distinct sessions: a baseline following Normal Sleep (NS) and a session following 24 hours of Sleep Deprivation (SD).
 
@@ -13,7 +13,7 @@ Official Dataset Link: [OpenNeuro ds004902](https://openneuro.org/datasets/ds004
 
 Official Research Paper: Scientific Data (Nature) - https://doi.org/10.1038/s41597-024-03268-2
 
-## 📁 Repository Structure
+## Repository Structure
 
 The repository is organized into the following directories and files.
 
@@ -62,13 +62,13 @@ Implements rigorous evaluation strategies, including standard 80/20 train-test s
 ParentResearchPaper.pdf
 A local copy of the original Xiang et al. (2024) publication (A resting-state EEG dataset for sleep deprivation). Kept for offline reference regarding spatial/spectral findings and the experimental protocol.
 
-### ⚙️ Methodology Highlights
+### Methodology Highlights
 
 Addressing Inter-Subject Variability: Due to massive differences in baseline skull thickness and natural brain rhythms across the 71 subjects, standard global normalization fails. This project implements Intra-Subject Z-score Normalization to track relative brainwave changes rather than absolute microvolt values.
 
 Train/Test Splitting: Employs a strict subject-wise split (e.g., training on Subjects 1-56, testing on Subjects 57-71) to ensure zero data leakage and to validate that the models are finding universal markers of fatigue, not memorizing specific participants.
 
-### 🚀 Getting Started
+### Getting Started
 
 To replicate this analysis:
 
